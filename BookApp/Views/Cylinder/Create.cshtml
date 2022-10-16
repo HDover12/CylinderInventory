@@ -1,0 +1,40 @@
+﻿@model Cylinder
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row">
+            <h2 class="text-primary p-2">Add Cylinder</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="CylinderId" class="mb-1"></label>
+            <input asp-for="CylinderId" class="form-control"/>
+            <span asp-validation-for="CylinderId" class="text-danger"></span>
+        </div>
+          <div>
+            <label asp-for="Components" class="mb-1"></label>
+            <input asp-for="Components" class="form-control"/>
+            <span asp-validation-for="Components" class="text-danger"></span>
+        </div>
+         <div>
+            <label asp-for="Concentration" class="mb-1"></label>
+            <input asp-for="Concentration" class="form-control"/>
+            <span asp-validation-for="Concentration" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Unit" class="mb-1"></label>
+            <input asp-for="Unit" class="form-control"/>
+            <span asp-validation-for="Unit" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3" style="width: 150px">Add Cylinder</button>
+        <a asp-controller="Cylinder" asp-action="Index" class="btn btn-secondary mt-3" style="width:150px">Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+}

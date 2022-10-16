@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Cylinder>
+@{
+    ViewData["Title"] = "Index";
+
+}
+
+
+<partial name="_Notification" />
+<form >
+
+</form>
+
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Cylinder List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Cylinder" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> &nbsp Add a Cylinder</a>
+        </div>
+    </div>
+    <br />
+  
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Cylinder Id
+            </th>
+            <th>
+                Component(s)
+            </th>
+              <th>
+                Concentration
+            </th>
+            <th>
+                Unit
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>    
+
+
+                  @if(TempData["cylinder"] != null)
+                  {
+                  
+                  if(TempData["cylinder"].ToString() == obj.Id.ToString()) 
+                  {
+                     <td class="text-primary">
+                                 <i class="bi bi-caret-right-fill text-primary" ></i>  @obj.CylinderId 
+                     </td>
+                  }
+                    else
+                      {
+                         <td>
+                          @obj.CylinderId
+                        </td>
+                
+                      }
+                    }
+                    else
+                    {
+                                 <td>
+                            @obj.CylinderId
+                                </td>
+
+                    }
+
+
+
+
+                     <td>
+                         @obj.Components
+                    </td>
+                    <td>
+                         @obj.Concentration
+                    </td>
+                    <td>
+                          @obj.Unit
+                    </td>
+                    <td class="text-end">
+                      <div class="btn-group" role="group">
+                                         <a  style="width: 95px" class="btn btn-primary" asp-controller="Cylinder" asp-action="Edit" asp-route-id="@obj.Id"><i class="bi bi-pencil-square"></i> &nbsp; Edit</a>
+                      </div>
+                             <div class="btn-group" role="group">
+                               <a style="background-color: #B02A37; width: 95px" class="btn btn-danger" asp-controller="Cylinder" asp-action="Delete" asp-route-id="@obj.Id"><i class="bi bi-trash3"></i> &nbsp; Delete</a>
+                             </div>
+                    </td>
+                                
+            </tr>
+        }
+    </tbody>
+</table>
+
+      </div>

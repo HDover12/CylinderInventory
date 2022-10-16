@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaJZ1IHm9WU2bORAA8ut49AAAAAACAAAAAAAQZgAAAAEAACAAAADNaFV0pPxi9AIsfnGpyiiM5THdDqUWKaG5dMvSYb+OVAAAAAAOgAAAAAIAACAAAABBtIrkv1vSqDhP4U+ARdbLnFYgn/gE8R5/9I1rYQdiBIAAAACsw4+kNUQPBMNh2V7dw4C7vfgmxHVQGtDfDqx5KHZ288DDxUGOLxV50HUMeqBTqc/qMVjzIxsGFWD4OabnaqRnMLcXkYdKTPPUFphfe41tG3ivz67GzmAp1xIKD0uwsHrLucJ66nremnsM7aM8gJA2+KEVCxB/ISZU3hRdkVfihUAAAABYWiDuJ9FZx9lsNw74OepUwTCTbgKBar3Uhu3K2gB6GR+pCiZNHsRlDmDklHCR/laBKStTQX+ZeqQMIZ3kfo+q</EncryptedPassword>
+    <History>True|2022-10-14T19:56:56.3602963Z;False|2022-10-14T15:55:15.6870506-04:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:cylinderinventoryserver.database.windows.net,1433%3bInitial Catalog=CylinderInventory%3bPersist Security Info=False%3bUser ID=admin-cylinder%3bPassword=Furman%2a1289%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BookApp.Data.ApplicationDbContext">
+      <Value>Server=tcp:cylinderinventoryserver.database.windows.net,1433%3bInitial Catalog=CylinderInventory%3bPersist Security Info=False%3bUser ID=admin-cylinder%3bPassword=Furman%2a1289%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
