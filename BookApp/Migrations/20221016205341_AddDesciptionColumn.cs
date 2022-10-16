@@ -13,7 +13,7 @@ namespace BookApp.Migrations
                 table: "CylinderInventory",
                 type: "nvarchar(max)",
                 nullable: true,
-                defaultValue: "");
+                defaultValue: "None");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

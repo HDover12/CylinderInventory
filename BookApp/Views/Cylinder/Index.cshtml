@@ -51,13 +51,13 @@
                       if(TempData["cylinder"].ToString() == obj.Id.ToString()) 
                         {
                          <td class="text-primary">
-                                                                     <i class="bi bi-caret-right-fill text-primary" ></i>  @obj.CylinderId  <a class="btn btn-link" v-on:click="info(@obj.Id)"><i class="bi bi-info-circle"></i></a> 
+                            <i class="bi bi-caret-right-fill text-primary" ></i>  @obj.CylinderId  <a class="btn btn-link" v-on:click="info(@obj.Id)"><i class="bi bi-info-circle"></i></a> 
                          </td>
                         }
                      else
                         {
                         <td>
-                                    @obj.CylinderId  <a v-on:click="info(@obj.Id)" class="btn btn-link"><i class="bi bi-info-circle"></i></a> 
+                            @obj.CylinderId  <a v-on:click="info(@obj.Id)" class="btn btn-link"><i class="bi bi-info-circle"></i></a> 
                         </td>
                 
                         }
@@ -65,7 +65,7 @@
                   else
                     {
                       <td>
-                                @obj.CylinderId  <a v-on:click="info(@obj.Id)" class="btn btn-link"><i class="bi bi-info-circle"></i></a> 
+                            @obj.CylinderId  <a v-on:click="info(@obj.Id)" class="btn btn-link"><i class="bi bi-info-circle"></i></a> 
                        </td>
 
                     }
@@ -73,13 +73,13 @@
                      <td style="position: relative">
                          @obj.Components
                               <div v-if="infodata == @obj.Id">
-                                <div class="card bg-black bg-opactiy-75" style="width: 18rem; position: absolute; left: -50%; top: -20px">
+                                <div class="card bg-body bg-opactiy-75 border-success" style="width: 18rem; position: absolute; left: -50%; top: -20px">
                                      <div class="card-body text-center">
                                   <h5 class="card-title ">@obj.CylinderId</h5>
                                   <hr />
-                                  <p class="card-text">@obj.Components</p>
-                                  <p class="card-text">@obj.Concentration @obj.Unit</p>
-                                  <p>@obj.Description</p>
+                                  <p class="card-text">Components: <br />@obj.Components</p>
+                                  <p class="card-text">Concentration: <br/> @obj.Concentration @obj.Unit</p>
+                                  <p>Description: <br /> @obj.Description</p>
                                   <a v-on:click="info(0)" class="btn btn-primary text-center" style="width: 100%">Close</a>
                                  </div>
                                 </div>

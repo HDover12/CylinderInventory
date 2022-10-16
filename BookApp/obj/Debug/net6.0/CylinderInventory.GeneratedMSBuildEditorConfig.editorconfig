@@ -8,57 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CylinderInventory
 build_property.RootNamespace = CylinderInventory
-build_property.ProjectDir = C:\Users\hmgui\Desktop\Coding\C#\BookApp\BookApp\
+build_property.ProjectDir = C:\Users\hmgui\Desktop\Coding\C#\CylinderApp\BookApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hmgui\Desktop\Coding\C#\BookApp\BookApp
+build_property.MSBuildProjectDirectory = C:\Users\hmgui\Desktop\Coding\C#\CylinderApp\BookApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Cylinder/Create.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Cylinder/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3lsaW5kZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Cylinder/Delete.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Cylinder/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3lsaW5kZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Cylinder/Edit.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Cylinder/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3lsaW5kZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Cylinder/Index.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Cylinder/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3lsaW5kZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Home/Index.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Home/Privacy.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Shared/Error.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Shared/_Notification.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/_ViewImports.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/_ViewStart.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hmgui/Desktop/Coding/C\#/BookApp/BookApp/Views/Shared/_Layout.cshtml]
+[C:/Users/hmgui/Desktop/Coding/C\#/CylinderApp/BookApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1tj0bt6xrk

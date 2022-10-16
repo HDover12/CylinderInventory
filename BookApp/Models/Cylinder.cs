@@ -16,7 +16,7 @@ namespace BookApp.Models
         public int Concentration { get; set; }
         [Required]
         public string Unit { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
     }
 }

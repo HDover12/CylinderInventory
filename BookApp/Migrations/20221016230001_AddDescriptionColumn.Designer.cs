@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221014155244_AddToDatabase")]
-    partial class AddToDatabase
+    [Migration("20221016230001_AddDescriptionColumn")]
+    partial class AddDescriptionColumn
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,6 +44,9 @@ namespace BookApp.Migrations
 
                     b.Property<string>("CylinderId")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Unit")
