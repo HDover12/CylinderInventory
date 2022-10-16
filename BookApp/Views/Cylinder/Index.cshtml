@@ -20,7 +20,7 @@
         </div>
     </div>
     <br />
-  
+ <div id="vueApp">
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
@@ -46,35 +46,44 @@
 
 
                   @if(TempData["cylinder"] != null)
-                  {
+                     {
                   
-                  if(TempData["cylinder"].ToString() == obj.Id.ToString()) 
-                  {
-                     <td class="text-primary">
-                                 <i class="bi bi-caret-right-fill text-primary" ></i>  @obj.CylinderId 
-                     </td>
-                  }
-                    else
-                      {
-                         <td>
-                          @obj.CylinderId
+                      if(TempData["cylinder"].ToString() == obj.Id.ToString()) 
+                        {
+                         <td class="text-primary">
+                                                                     <i class="bi bi-caret-right-fill text-primary" ></i>  @obj.CylinderId  <a class="btn btn-link" v-on:click="info(@obj.Id)"><i class="bi bi-info-circle"></i></a> 
+                         </td>
+                        }
+                     else
+                        {
+                        <td>
+                                    @obj.CylinderId  <a v-on:click="info(@obj.Id)" class="btn btn-link"><i class="bi bi-info-circle"></i></a> 
                         </td>
                 
-                      }
+                        }
                     }
-                    else
+                  else
                     {
-                                 <td>
-                            @obj.CylinderId
-                                </td>
+                      <td>
+                                @obj.CylinderId  <a v-on:click="info(@obj.Id)" class="btn btn-link"><i class="bi bi-info-circle"></i></a> 
+                       </td>
 
                     }
 
-
-
-
-                     <td>
+                     <td style="position: relative">
                          @obj.Components
+                              <div v-if="infodata == @obj.Id">
+                                <div class="card bg-black bg-opactiy-75" style="width: 18rem; position: absolute; left: -50%; top: -20px">
+                                     <div class="card-body text-center">
+                                  <h5 class="card-title ">@obj.CylinderId</h5>
+                                  <hr />
+                                  <p class="card-text">@obj.Components</p>
+                                  <p class="card-text">@obj.Concentration @obj.Unit</p>
+                                  <p>@obj.Description</p>
+                                  <a v-on:click="info(0)" class="btn btn-primary text-center" style="width: 100%">Close</a>
+                                 </div>
+                                </div>
+                              </div>   
                     </td>
                     <td>
                          @obj.Concentration
@@ -83,17 +92,38 @@
                           @obj.Unit
                     </td>
                     <td class="text-end">
-                      <div class="btn-group" role="group">
-                                         <a  style="width: 95px" class="btn btn-primary" asp-controller="Cylinder" asp-action="Edit" asp-route-id="@obj.Id"><i class="bi bi-pencil-square"></i> &nbsp; Edit</a>
-                      </div>
-                             <div class="btn-group" role="group">
-                               <a style="background-color: #B02A37; width: 95px" class="btn btn-danger" asp-controller="Cylinder" asp-action="Delete" asp-route-id="@obj.Id"><i class="bi bi-trash3"></i> &nbsp; Delete</a>
-                             </div>
+                        <div class="btn-group" role="group">
+                             <a  style="width: 95px" class="btn btn-primary" asp-controller="Cylinder" asp-action="Edit" asp-route-id="@obj.Id"><i class="bi bi-pencil-square"></i> &nbsp; Edit</a>
+                        </div>
+                        <div class="btn-group" role="group">
+                             <a style="background-color: #B02A37; width: 95px" class="btn btn-danger" asp-controller="Cylinder" asp-action="Delete" asp-route-id="@obj.Id"><i class="bi bi-trash3"></i> &nbsp; Delete</a>
+                        </div>
+                                                   
+                            
                     </td>
-                                
+                                   
             </tr>
+               
         }
     </tbody>
 </table>
+</div> 
 
-      </div>
+
+@section scripts 
+{
+             <script type="text/javascript">
+            var app = new Vue({
+                el: '#vueApp',
+                data: {
+                   
+                    infodata: 0,
+                },
+                methods : {
+                    info: function(id) {
+                        this.infodata = id
+                    }
+                }
+            });
+        </script>
+}

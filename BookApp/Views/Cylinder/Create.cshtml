@@ -27,6 +27,11 @@
             <input asp-for="Unit" class="form-control"/>
             <span asp-validation-for="Unit" class="text-danger"></span>
         </div>
+          <div>
+            <label asp-for="Description" class="mb-1"></label>
+            <input asp-for="Description" class="form-control"/>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
         <button type="submit" class="btn btn-primary mt-3" style="width: 150px">Add Cylinder</button>
         <a asp-controller="Cylinder" asp-action="Index" class="btn btn-secondary mt-3" style="width:150px">Cancel</a>
     </div>

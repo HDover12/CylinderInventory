@@ -262,3 +262,4 @@ C:\Users\hmgui\Desktop\Coding\C#\BookApp\BookApp\obj\Debug\net6.0\refint\Cylinde
 C:\Users\hmgui\Desktop\Coding\C#\BookApp\BookApp\obj\Debug\net6.0\CylinderInventory.pdb
 C:\Users\hmgui\Desktop\Coding\C#\BookApp\BookApp\obj\Debug\net6.0\CylinderInventory.genruntimeconfig.cache
 C:\Users\hmgui\Desktop\Coding\C#\BookApp\BookApp\obj\Debug\net6.0\ref\CylinderInventory.dll
+C:\Users\hmgui\Desktop\Coding\C#\BookApp\BookApp\bin\Debug\net6.0\Microsoft.AspNetCore.SpaServices.Extensions.dll

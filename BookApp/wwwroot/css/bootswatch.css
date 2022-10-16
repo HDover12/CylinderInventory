@@ -4715,7 +4715,7 @@ textarea.form-control-lg {
     --bs-card-cap-color:;
     --bs-card-height:;
     --bs-card-color:;
-    --bs-card-bg: rgba(238, 232, 213, 0.125);
+    --bs-card-bg: rgba(238, 232, 213, 0.25);
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
     position: relative;
@@ -4728,6 +4728,7 @@ textarea.form-control-lg {
     background-clip: border-box;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius: var(--bs-card-border-radius);
+    z-index: 2;
 }
 
     .card > hr {
